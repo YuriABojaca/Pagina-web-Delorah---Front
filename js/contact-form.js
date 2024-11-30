@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
       try {
         // Enviar los datos al servidor
-        const response = await fetch('http://localhost:5001/api/contact-form', {
+        const response = await fetch('https://pagina-web-delorah-back-n8j3.vercel.app/api/contact-form', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

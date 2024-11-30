@@ -3,7 +3,7 @@ async function obtenerProductos() {
     const category = params.get('category'); // Ejemplo: 'blusas'
     console.log(`Categoría seleccionada: ${category}`);
     try {
-      const response = await fetch(`http://localhost:5001/api/products?category=${category}`);
+      const response = await fetch(`https://pagina-web-delorah-back-n8j3.vercel.app/api/products?category=${category}`);
       const productos = await response.json();
   
       const contenedor = document.getElementById('gallery-section');
